@@ -6,6 +6,10 @@ Pure PHP authentication API with no framework, manual JWT handling, refresh toke
 
 The main entry point is [index.php](index.php). It loads `.env` variables, applies security headers, configures CORS, and dispatches the request to [routes/router.php](routes/router.php).
 
+```php
+php -S localhost:8000 index.php
+```
+
 The request flow is:
 
 1. `.htaccess` rewrites all requests to `index.php`.
